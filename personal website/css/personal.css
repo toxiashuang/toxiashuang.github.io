@@ -58,6 +58,7 @@ header{
           
 figure{
     position:relative; 
+    max-width:1000px;
 }
           
 figure section {
