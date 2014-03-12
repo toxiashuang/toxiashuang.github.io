@@ -108,7 +108,7 @@ footer {
 
 footer section {
     margin:0px;
-    padding:0px
+    padding:0px;
 }
 
 footer ul {
@@ -143,23 +143,35 @@ footer li{
 
 @media screen and (max-width:600px) {
     body{background-color:blue}
+
+    figure section {
+        /* background-color:#000000;
+        opacity:0.1;*/
+        position: absolute; /* Places text within img */
+        top: 7%;
+        left: 7%;
+        right:3%;
+        bottom:4%;
+        overflow-y:auto; /* Creates scrolling */
+}
 }
 
 @media screen and (max-width:350px) {
     body{background-color:purple}
-    figure{
-        position:relative; /*Places text within img */
-        max-width:1000px;
-        margin-left:4%; /* to center */
-        margin-right:4%; /* to center */
-       /* padding-bottom:5px; */
-}
+
     figure section {
         /* background-color:#000000;
         opacity:0.1; */
         position: absolute; /* Places text within img */
         top: 7%;
         left: 7%;
+        right:3%;
         bottom:4%;
-        /* overflow-y:auto; /* Creates scrolling */ */
+        overflow-y:auto; /* Creates scrolling */
+}
+    footer li{
+    margin-right: 2%;
+    display:block; /*Makes list horizontal */
+}
+}
 }
