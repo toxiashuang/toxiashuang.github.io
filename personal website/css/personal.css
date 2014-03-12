@@ -67,8 +67,8 @@ header{
 figure{
     position:relative; /*Places text within img */
     max-width:1000px;
-    margin-left:10%; /* to center */
-    margin-right:10%; /* to center */
+    margin-left:4%; /* to center */
+    margin-right:4%; /* to center */
    /* padding-bottom:5px; */
 }
           
@@ -102,8 +102,8 @@ footer {
     text-align:center;
     padding-top:1px;
     max-width:1000px;
-    margin-left:10%; /* to center */
-    margin-right:10%; /* to center */
+    margin-left:3.5%; /* to center */
+    margin-right:3.5%; /* to center */
 }
 
 footer section {
@@ -137,6 +137,29 @@ footer li{
     border:0px solid black; /*removes border */
 }
 
+@media screen and (max-width:1024px){
+    body{background-color:red}
+}
+
 @media screen and (max-width:600px) {
-    body{background-color:red
+    body{background-color:blue}
+}
+
+@media screen and (max-width:350px) {
+    body{background-color:purple}
+    figure{
+        position:relative; /*Places text within img */
+        max-width:1000px;
+        margin-left:4%; /* to center */
+        margin-right:4%; /* to center */
+       /* padding-bottom:5px; */
+}
+    figure section {
+        /* background-color:#000000;
+        opacity:0.1; */
+        position: absolute; /* Places text within img */
+        top: 7%;
+        left: 7%;
+        bottom:4%;
+        /* overflow-y:auto; /* Creates scrolling */ */
 }
