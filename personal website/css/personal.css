@@ -62,10 +62,14 @@ figure{
 }
           
 figure section {
+    /* background-color:#000000;
+    opacity:0.1; */
     position: absolute; 
     top: 7%;
     left: 7%;
-    right: 50%;
+    right: 40%;
+    bottom:0;
+    overflow-y:auto;
 }
 
 nav {
@@ -77,6 +81,7 @@ nav section img {
     margin-left:2px;
     margin-right:2px;
     margin-bottom:1%;
+    max-width:310px;
 }
 
 footer {
