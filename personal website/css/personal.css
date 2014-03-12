@@ -62,7 +62,9 @@ header{
 figure{
     position:relative; /*Places text within img */
     max-width:1000px;
-    padding-bottom:5px;
+    margin-left:5%; /* to center */
+    margin-right:5%; /* to center */
+   /* padding-bottom:5px; */
 }
           
 figure section {
@@ -72,7 +74,7 @@ figure section {
     top: 7%;
     left: 7%;
     right: 40%;
-    bottom:0;
+    bottom:4%;
     overflow-y:auto; /* Creates scrolling */
 }
 
@@ -93,6 +95,8 @@ footer {
     text-align:center;
     padding-top:1px;
     max-width:1010px;
+    margin-left:5%; /* to center */
+    margin-right:5%; /* to center */
 }
 
 footer section {
@@ -124,4 +128,8 @@ footer li{
     width:25px;
     height:25px;
     border:0px solid black; /*removes border */
+}
+
+@media screen and (max-width:600px) {
+    body{background-color:red
 }
