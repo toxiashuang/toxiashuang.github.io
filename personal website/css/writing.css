@@ -55,33 +55,48 @@ header{
     text-align:right;
     padding-right:10%;
 }
-          
+               
 figure{
-    position:relative; 
+    position:relative; /*Places text within img */
+    max-width:1000px;
+    margin-left:14%; /* to center */
+    margin-right:14%; /* to center */
+   /* padding-bottom:5px; */
 }
           
 figure section {
-    position: absolute; 
+    /* background-color:#000000;
+    opacity:0.1; */
+    position: absolute; /* Places text within img */
     top: 7%;
     left: 7%;
-    right: 50%;
+    right: 40%;
+    bottom:4%;
+    overflow-y:auto; /* Creates scrolling */
 }
+
 
 nav {
     text-align:center;
+    margin-left:13%;
+    margin-right:13%;
 }
 
 nav section img {
-    width:30%;
-    margin-left:2px;
-    margin-right:2px;
+    width:23%;
+    margin-left:3px;
+    margin-right:3px;
     margin-bottom:1%;
+    max-width:310px;
 }
 
 footer {
     background-color:#686868;
     text-align:center;
     padding-top:1px;
+    max-width:1000px;
+    margin-left:13%; /* to center */
+    margin-right:13%; /* to center */
 }
 
 footer section {
