@@ -62,8 +62,8 @@ header{
 figure{
     position:relative; /*Places text within img */
     max-width:1000px;
-    margin-left:5%; /* to center */
-    margin-right:5%; /* to center */
+    margin-left:14%; /* to center */
+    margin-right:14%; /* to center */
    /* padding-bottom:5px; */
 }
           
@@ -80,6 +80,8 @@ figure section {
 
 nav {
     text-align:center;
+    margin-left:13%;
+    margin-right:13%;
 }
 
 nav section img {
@@ -94,9 +96,9 @@ footer {
     background-color:#686868;
     text-align:center;
     padding-top:1px;
-    max-width:1010px;
-    margin-left:5%; /* to center */
-    margin-right:5%; /* to center */
+    max-width:1000px;
+    margin-left:13%; /* to center */
+    margin-right:13%; /* to center */
 }
 
 footer section {
