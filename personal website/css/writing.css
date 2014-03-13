@@ -1,10 +1,7 @@
 /* General element styles */
 
-body {
-    /* Browser compatability */
-    margin:0px;
-    padding:0px;
-	background-color: #E0FFFF;
+body{
+    background-color:#F8F8FF;
 }
 
 h1 {
@@ -55,6 +52,14 @@ a.footer:hover {
 
 /* Container styles */
 
+article{
+    border:2px solid black;
+    /* Browser compatability */
+    margin:0px;
+    padding:0px;
+    background-color: #E0FFFF;
+} 
+
 header{
     text-align:right;
     padding-right:10%;
@@ -63,8 +68,10 @@ header{
 figure{
     position:relative; /*Places text within img */
     max-width:1000px;
-    margin-left:4%; /* to center */
-    margin-right:4%; /* to center */
+    width:93%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
    /* padding-bottom:5px; */
 }
           
@@ -99,8 +106,10 @@ footer {
     text-align:center;
     padding-top:1px;
     max-width:1000px;
-    margin-left:3.5%; /* to center */
-    margin-right:3.5%; /* to center */
+    width:93%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     /* Possible alternative style
     position:fixed;
     right:10%;

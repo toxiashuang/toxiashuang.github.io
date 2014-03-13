@@ -1,14 +1,11 @@
 /* General element styles */
 
-body{
-    background-color:#F8F8FF;
-}
 
 h1 {
     font-size:60px;
+    /* color: #111111; */
     color: #333333;
     font-family: Century Gothic, sans-serif;
-    text-decoration:underline;
 }
 
 h2 {
@@ -50,11 +47,12 @@ a.footer:hover {
 
 
 
-/* Container styles */
+/* Container or module styles */
 
 article{
+    align-content;center;
     border:2px solid black;
-    /* Browser compatability */
+    background-color:#F8F8FF;
     margin:0px;
     padding:0px;
     background-color: #E0FFFF;
@@ -75,14 +73,13 @@ figure{
    /* padding-bottom:5px; */
 }
           
-figure section{
-    /* For future styling
-    background-color:#000000;
+figure section {
+    /* background-color:#000000;
     opacity:0.1; */
     position: absolute; /* Places text within img */
     top: 7%;
     left: 7%;
-    right: 35%; /* Keeps text from bleeding too far right */
+    right: 35%;
     bottom:4%;
     overflow-y:auto; /* Creates scrolling */
 }
@@ -95,10 +92,10 @@ nav {
 
 nav section img {
     width:30%;
-    max-width:325px;
     margin-left:2px;
     margin-right:2px;
     margin-bottom:1%;
+    max-width:325px;
 }
 
 footer {
@@ -106,15 +103,10 @@ footer {
     text-align:center;
     padding-top:1px;
     max-width:1000px;
-    width:93%;
     left: 0;
     right: 0;
     margin: 0 auto;
-    /* Possible alternative style
-    position:fixed;
-    right:10%;
-    bottom:0px;
-    left:10%; */
+    width:93%;
 }
 
 footer section {
@@ -139,7 +131,6 @@ footer li{
 
 /* Class and ID styles*/
 #social {
-    /* Social media buttons */
     margin:2 2 2 2px;
     padding:0px
 }
@@ -150,21 +141,35 @@ footer li{
     border:0px solid black; /*removes border */
 }
 
+@media screen and (max-width:1024px){
+    body{background-color:red}
+}
+
 @media screen and (max-width:600px) {
+    body{background-color:blue}
+
     figure section {
         /* background-color:#000000;
         opacity:0.1;*/
         position: absolute; /* Places text within img */
         top: 1%;
         left: 2%;
-        right:20%; /* Moves text further right to create more space */
+        right:20%;
         bottom:3%;
         overflow-y:auto; /* Creates scrolling */
+}
+    footer {    
+        position:inherit;
+        right:10%;
+        bottom:0px;
+        left:10%;
     }
 }
     
 
 @media screen and (max-width:350px) {
+    body{background-color:purple}
+
     figure section {
         /* background-color:#000000;
         opacity:0.1; */
@@ -175,4 +180,14 @@ footer li{
         bottom:4%;
         overflow-y:auto; /* Creates scrolling */
     }
+    
+    footer{
+        position:inherit;
+    }
+    
+    footer li{
+    margin-right: 2%;
+    display:block; /*Makes list vertical */
+}
+}
 }
