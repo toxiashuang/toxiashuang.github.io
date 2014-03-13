@@ -138,6 +138,25 @@ footer li{
 
 
 /* Class and ID styles*/
+#news{/* unvisited links */
+
+a:link {
+    color:#000000;
+    text-decoration:none;
+}      
+
+/* visited link */
+a:visited {
+    color:#000000;
+    text-decoration:underline;
+}
+
+/* hover link */
+a:hover {
+    color:#B8860B;
+}
+}
+
 #social {
     /* Social media buttons */
     margin:2 2 2 2px;
