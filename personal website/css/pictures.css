@@ -138,6 +138,10 @@ footer li{
 
 
 /* Class and ID styles*/
+#concept img {
+    max-height:150px; /* adjusts for narrower pinwheel picture */
+}
+
 #social {
     /* Social media buttons */
     margin:2 2 2 2px;
