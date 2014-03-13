@@ -1,27 +1,31 @@
 /* General element styles */
 
-container {
-    border:1px;
-}
-
 body {
-	background-color: #F5F5DC;
+    /* Browser compatability */
+    margin:0px;
+    padding:0px;
+	background-color: #E0FFFF;
 }
 
 h1 {
     font-size:60px;
-    color: #111111;
+    color: #333333;
+    font-family: Century Gothic, sans-serif;
+    text-decoration:underline;
 }
 
 h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p {
+    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+    font-size:1.04em; */
 }
 
 img {
     width:100%;
-    border:2px solid black;
+    border:2px solid black; /* Border for all imgs */
 }
 
 /* unvisited links */
@@ -49,77 +53,84 @@ a.footer:hover {
 
 
 
-/* Container or module styles */
+/* Container styles */
 
 header{
     text-align:right;
     padding-right:10%;
 }
-               
+          
 figure{
     position:relative; /*Places text within img */
     max-width:1000px;
-    margin-left:14%; /* to center */
-    margin-right:14%; /* to center */
+    margin-left:4%; /* to center */
+    margin-right:4%; /* to center */
    /* padding-bottom:5px; */
 }
           
-figure section {
-    /* background-color:#000000;
+figure section{
+    /* For future styling
+    background-color:#000000;
     opacity:0.1; */
     position: absolute; /* Places text within img */
     top: 7%;
     left: 7%;
-    right: 40%;
+    right: 35%; /* Keeps text from bleeding too far right */
     bottom:4%;
     overflow-y:auto; /* Creates scrolling */
 }
 
-
 nav {
     text-align:center;
-    margin-left:13%;
-    margin-right:13%;
+    margin-left:0%;
+    margin-right:0%;
 }
 
 nav section img {
-    width:23%;
-    margin-left:3px;
-    margin-right:3px;
+    width:30%;
+    max-width:325px;
+    margin-left:2px;
+    margin-right:2px;
     margin-bottom:1%;
-    max-width:310px;
 }
 
 footer {
-    background-color:#686868;
+    background-color:#D3D3D3;
     text-align:center;
     padding-top:1px;
     max-width:1000px;
-    margin-left:13%; /* to center */
-    margin-right:13%; /* to center */
+    margin-left:3.5%; /* to center */
+    margin-right:3.5%; /* to center */
+    /* Possible alternative style
+    position:fixed;
+    right:10%;
+    bottom:0px;
+    left:10%; */
 }
 
 footer section {
     margin:0px;
-    padding:0px
+    padding:0px;
 }
 
 footer ul {
-    list-style-type:none;
+    list-style-type:none; /*Removes bullets */
     margin-top:5px;
     margin-bottom:0px;
 }
 
 footer li{
     margin-right: 2%;
-    display:inline;
+    display:inline; /*Makes list horizontal */
 }
+
 
 
 
 
 /* Class and ID styles*/
 #social {
+    /* Social media buttons */
     margin:2 2 2 2px;
     padding:0px
 }
@@ -127,5 +138,32 @@ footer li{
 #social img {
     width:25px;
     height:25px;
-    border:0px solid black;
+    border:0px solid black; /*removes border */
+}
+
+@media screen and (max-width:600px) {
+    figure section {
+        /* background-color:#000000;
+        opacity:0.1;*/
+        position: absolute; /* Places text within img */
+        top: 1%;
+        left: 2%;
+        right:20%; /* Moves text further right to create more space */
+        bottom:3%;
+        overflow-y:auto; /* Creates scrolling */
+    }
+}
+    
+
+@media screen and (max-width:350px) {
+    figure section {
+        /* background-color:#000000;
+        opacity:0.1; */
+        position: absolute; /* Places text within img */
+        top: 7%;
+        left: 7%;
+        right:3%;
+        bottom:4%;
+        overflow-y:auto; /* Creates scrolling */
+    }
 }
