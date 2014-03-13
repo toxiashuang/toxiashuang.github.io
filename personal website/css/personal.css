@@ -172,6 +172,11 @@ footer li{
     }
 }
 
+  .resume{
+        background:url(imgs/writing.jpg)
+    }
+    
+
 @media screen and (max-width:350px) {
     body{background-color:purple}
 
@@ -185,6 +190,11 @@ footer li{
         bottom:4%;
         overflow-y:auto; /* Creates scrolling */
     }
+    
+    .resume{
+        background:url(imgs/writing-small.jpg)
+    }
+    
     footer{
         position:inherit;
     }
