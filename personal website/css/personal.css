@@ -21,7 +21,7 @@ p {
 
 img {
     width:100%;
-    border:2px solid black; /* Border for all imgs */
+    border:1px solid black; /* Border for all imgs */
 }
 
 /* unvisited links */
@@ -78,7 +78,7 @@ figure section {
     position: absolute; /* Places text within img */
     top: 7%;
     left: 7%;
-    right: 40%;
+    right: 35%;
     bottom:4%;
     overflow-y:auto; /* Creates scrolling */
 }
