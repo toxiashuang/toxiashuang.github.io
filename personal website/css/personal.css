@@ -16,16 +16,17 @@ h1 {
 }
 
 h2 {
-    color: #333333;
-    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p {
+    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+    font-size:1.04em; */
 }
 
 img {
     width:100%;
-    border:1px solid black; /* Border for all imgs */
+    border:2px solid black; /* Border for all imgs */
 }
 
 /* unvisited links */
@@ -102,12 +103,16 @@ nav section img {
 }
 
 footer {
-    background-color:#686868;
+    background-color:#D3D3D3;
     text-align:center;
     padding-top:1px;
     max-width:1000px;
     margin-left:3.5%; /* to center */
     margin-right:3.5%; /* to center */
+    /* position:fixed;
+    right:10%;
+    bottom:0px;
+    left:10%; */
 }
 
 footer section {
@@ -159,6 +164,12 @@ footer li{
         bottom:4%;
         overflow-y:auto; /* Creates scrolling */
 }
+    footer {    
+        position:inherit;
+        right:10%;
+        bottom:0px;
+        left:10%;
+    }
 }
 
 @media screen and (max-width:350px) {
@@ -173,10 +184,14 @@ footer li{
         right:3%;
         bottom:4%;
         overflow-y:auto; /* Creates scrolling */
-}
+    }
+    footer{
+        position:inherit;
+    }
+    
     footer li{
     margin-right: 2%;
-    display:block; /*Makes list horizontal */
+    display:block; /*Makes list vertical */
 }
 }
 }
