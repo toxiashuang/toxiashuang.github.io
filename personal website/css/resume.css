@@ -22,7 +22,7 @@ p {
 
 img {
     width:100%;
-    border:2px solid black; /* Border for all imgs */
+    border:3px solid black; /* Border for all imgs */
 }
 
 /* unvisited links */
