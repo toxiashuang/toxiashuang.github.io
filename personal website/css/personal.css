@@ -6,9 +6,8 @@ body{
 
 h1 {
     font-size:60px;
-    color: #483D8B;
+    color: #333333;
     font-family: Century Gothic, sans-serif;
-    text-decoration:underline;
 }
 
 h2 {
@@ -57,7 +56,7 @@ article{
     /* Browser compatability */
     margin:0px;
     padding:0px;
-    background-color: #3CB371;
+    background-color: #8FBC8F;
 } 
 
 header{
