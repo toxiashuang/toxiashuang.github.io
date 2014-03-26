@@ -29,6 +29,19 @@ a:link{
     text-decoration:none;
 }
 
+a.header:link{
+    color:#000000;
+}
+
+a.header:visited{
+    color:#000000
+    text-decoration:none;
+}
+
+a.header:hover{
+    color:#B8860B;
+}    
+
 a.footer:link {
     color:#000000;
     text-decoration:none;
