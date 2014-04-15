@@ -1,7 +1,9 @@
 
 
 /* General element styles */
-
+body{
+ margin:0px;   
+}
 h1 {
     font-size:55px;
     font-family: Century Gothic, sans-serif;
@@ -123,6 +125,17 @@ footer p {
     padding-left:5%;
 }
 
+#backtop {
+    position:fixed;
+    top:80%;
+    right:3%;
+    bottom:5%;
+    left:80%;
+}
+
+#backtop p {
+    text-align:right;
+}
 
 @media screen and (max-width:600px) {
 }  
