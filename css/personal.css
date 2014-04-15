@@ -1,8 +1,10 @@
 
 
 /* General element styles */
+
 body{
  margin:0px;   
+    font-family: 'Roboto', sans-serif;
 }
 h1 {
     font-size:55px;
@@ -34,6 +36,7 @@ header {
     position:fixed; /*Keeps header on top */
     background-color:#ffffff;
     width:100%;
+    margin-top: -16px;
 }
 
 header h1 {
@@ -89,8 +92,8 @@ footer p {
 }
 
 #header {
-    float:left
-    clear:both;
+    float:left;
+        width:100%;
 }    
 
 #social {
@@ -99,7 +102,7 @@ footer p {
 }
 
 #navigation {
-    float:inherit;
+float:left;
 }
 
 #navigation ul {
