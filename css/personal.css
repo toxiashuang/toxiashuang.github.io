@@ -31,12 +31,16 @@ a:hover {
 
 
 /* Container styles */
+body {
+    margin:0px;
+    padding:0px;
+}
 
 header {
     position:fixed; /*Keeps header on top */
-    background-color:#ffffff;
+    background-color:#B0C4DE;/*#ffffff;*/
     width:100%;
-    margin-top: -16px;
+    margin-top:-16px;
 }
 
 header h1 {
@@ -45,8 +49,7 @@ header h1 {
 }
 
 figure {
-    padding-top:160px; /* Clears the header */
-    padding-bottom:15px;
+    padding-top:200px; /* Clears the header */
     text-align:center;
     margin-left:0%;
     margin-right:0%;
@@ -93,25 +96,21 @@ footer p {
 
 #header {
     float:left;
-        width:100%;
 }    
 
-#social {
-    float:right;
-    right:5px;
-}
-
-#navigation {
-float:left;
-}
-
-#navigation ul {
-}
-
-#navigation li {
+#header li {
     display:inline;
 }
 
+#social {
+    float:right;
+    margin-right:10px;
+    margin-top:118px;
+}
+
+#social li {
+    display:inline;
+}
 
 
 
@@ -125,41 +124,60 @@ float:left;
 #header h1 {
     clear:both;
     width:40%;
-    padding-left:5%;
-}
-
-#backtop {
-    position:fixed;
-    top:80%;
-    right:3%;
-    bottom:5%;
-    left:80%;
-}
-
-#backtop p {
-    text-align:right;
+   /* padding-left:5%;*/
 }
 
 @media screen and (max-width:600px) {
+    
+    body {background-color:lightblue;}
+    
+    
+    #header {
+        float:left;
+    }    
+    
+    #header li {
+        display:inline;
+    }
+    
+    #social {
+        float:right;
+        margin-right:10px;
+        margin-top:132px;
+    }
 }  
 
+@media screen and (max-width:540px) {
+    body {background-color:pink;}
+    #social {
+        float:left;
+        margin-top:-25px;
+        margin-right:0%;
+        margin-bottom:-10px;
+    }
+}
+
 @media screen and (max-width:350px) {
+    body {background-color:blue;}
     article {
         width:100%;
     }
     
     #header {
-        text-align:center;
-        float:none;
+        float:left;
     }
     
     #social {
-        float:none;
-        text-align:center;
-        margin-left:0%;
+        float:right;
         margin-right:0%;
-        }
+    }
+    
+    #social li {
+        display:block;
+    }
     
     nav img {
-        width:100%
+        width:100%;
+        max-width:225px;
+        max-height:225px;
     }
