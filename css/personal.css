@@ -8,8 +8,12 @@ body{
 }
 h1 {
     font-size:55px;
-    font-family: Century Gothic, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
 }
+
+h2 {font-family: 'Quicksand', sans-serif;}
+
+p {font-family: 'Pontano Sans', sans-serif;}
 
 ul {
     list-style-type:none;
@@ -100,6 +104,7 @@ footer p {
 
 #header li {
     display:inline;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #social {
@@ -145,7 +150,7 @@ footer p {
         margin-right:10px;
         margin-top:132px;
     }
-}  
+}
 
 @media screen and (max-width:540px) {
     body {background-color:pink;}
