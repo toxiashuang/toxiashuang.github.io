@@ -110,7 +110,7 @@ footer p {
 #social {
     float:right;
     margin-right:10px;
-    margin-top:118px;
+    margin-top:100px;
 }
 
 #social li {
@@ -129,7 +129,6 @@ footer p {
 #header h1 {
     clear:both;
     width:40%;
-   /* padding-left:5%;*/
 }
 
 @media screen and (max-width:600px) {
@@ -139,6 +138,7 @@ footer p {
     
     #header {
         float:left;
+        width:60%;
     }    
     
     #header li {
@@ -148,12 +148,23 @@ footer p {
     #social {
         float:right;
         margin-right:10px;
-        margin-top:132px;
+        margin-top:100px;
     }
 }
 
+
+
 @media screen and (max-width:540px) {
     body {background-color:pink;}
+    
+    article h2 {
+        text-align:left;
+    }
+    
+    #header {
+        width:90%;
+    }
+    
     #social {
         float:left;
         margin-top:-25px;
@@ -169,7 +180,7 @@ footer p {
     }
     
     #header {
-        float:left;
+        width:50%;
     }
     
     #social {
