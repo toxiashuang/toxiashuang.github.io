@@ -131,7 +131,7 @@ footer p {
     width:40%;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:635px) {
     
     body {background-color:lightblue;}
     
@@ -185,6 +185,7 @@ footer p {
     
     #social {
         float:right;
+        margin-top:1px;
         margin-right:0%;
     }
     
