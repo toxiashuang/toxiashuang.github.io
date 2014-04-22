@@ -3,20 +3,21 @@
 /* General element styles */
 
 body{
- margin:0px;   
+    margin:0px;   
     font-family: 'Roboto', sans-serif;
 }
+
 h1 {
     font-size:55px;
     font-family: 'Julius Sans One', sans-serif;
 }
 
-h2 {font-family: 'Quicksand', sans-serif;}
+h2 {
+    font-family: 'Quicksand', sans-serif;
+}
 
-p {font-family: 'Pontano Sans', sans-serif;}
-
-ul {
-    list-style-type:none;
+p {
+    font-family: 'Pontano Sans', sans-serif;
 }
 
 a:link {
@@ -30,7 +31,7 @@ a:visited {
 }
 
 a:hover {
-    color:#90EE90;
+    color:#0066FF;
 }
 
 
@@ -50,6 +51,10 @@ header {
 header h1 {
     margin-top:-10px;
     margin-bottom:-17px;
+}
+
+header ul {
+    list-style-type:none;
 }
 
 figure {
@@ -98,9 +103,17 @@ footer p {
     text-align:center;
 }
 
+
+/* Class and ID styles*/
+
 #header {
     float:left;
 }    
+
+#header h1 {
+    clear:both;
+    width:40%;
+}
 
 #header li {
     display:inline;
@@ -117,25 +130,13 @@ footer p {
     display:inline;
 }
 
-
-
-/* Class and ID styles*/
-
 #social img {
     width:25px;
     height:25px;
 }
 
-#header h1 {
-    clear:both;
-    width:40%;
-}
-
 @media screen and (max-width:635px) {
-    
-    body {background-color:lightblue;}
-    
-    
+
     #header {
         float:left;
         width:55%;
@@ -155,7 +156,6 @@ footer p {
 
 
 @media screen and (max-width:540px) {
-    body {background-color:pink;}
     
     article h2 {
         text-align:left;
@@ -174,9 +174,14 @@ footer p {
 }
 
 @media screen and (max-width:350px) {
-    body {background-color:blue;}
     article {
         width:100%;
+    }
+    
+    nav img {
+        width:100%;
+        max-width:225px;
+        max-height:225px;
     }
     
     #header {
@@ -191,10 +196,4 @@ footer p {
     
     #social li {
         display:block;
-    }
-    
-    nav img {
-        width:100%;
-        max-width:225px;
-        max-height:225px;
     }

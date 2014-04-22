@@ -1,90 +1,75 @@
+
+
 /* General element styles */
 
 body{
-    background-color:#F8F8FF;
+    margin:0px;   
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    font-size:60px;
-    color: #333333;
-    font-family: Century Gothic, sans-serif;
+    font-size:55px;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 h2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 p {
-    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-    font-size:1.04em; */
+    font-family: 'Pontano Sans', sans-serif;
 }
 
-img {
-    width:100%;
-    border:3px solid black; /* Border for all imgs */
-}
-
-/* unvisited links */
-a:link{
-    text-decoration:none;
-}
-
-a.footer:link {
-    color:#000000;
-    text-decoration:none;
-}      
-
-/* visited link */
-a.footer:visited {
+a:link {
     color:#000000;
     text-decoration:none;
 }
 
-/* hover link */
-a.footer:hover {
-    color:#B8860B;
+a:visited {
+    color:#000000;
+    text-decoration:none;
 }
 
-
-
+a:hover {
+    color:#0066FF;
+}
 
 
 /* Container styles */
-
-article{
-    border:2px solid black;
-    /* Browser compatability */
+body {
     margin:0px;
     padding:0px;
-    background-color: #8FBC8F;
-} 
+}
 
-header{
-    text-align:right;
-    padding-right:10%;
+header {
+    position:fixed; /*Keeps header on top */
+    background-color:#B0C4DE;/*#ffffff;*/
+    width:100%;
+    margin-top:-16px;
 }
-          
-figure{
-    position:relative; /*Places text within img */
-    max-width:1000px;
-    width:93%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-   /* padding-bottom:5px; */
+
+header h1 {
+    margin-top:-10px;
+    margin-bottom:-17px;
 }
-          
-figure section{
-    /* For future styling
-    background-color:#000000;
-    opacity:0.1; */
-    position: absolute; /* Places text within img */
-    top: 7%;
-    left: 7%;
-    right: 35%; /* Keeps text from bleeding too far right */
-    bottom:4%;
-    overflow-y:auto; /* Creates scrolling */
+
+header ul {
+    list-style-type:none;
 }
+
+figure {
+    padding-top:200px; /* Clears the header */
+    text-align:center;
+    margin-left:0%;
+    margin-right:0%;
+}
+
+figure img {
+    width:100%;
+    max-height:400px;
+    max-width:900px;
+}
+
 
 nav {
     text-align:center;
@@ -93,89 +78,122 @@ nav {
 }
 
 nav img {
-    width:22%;
-    max-width:325px;
+    width:30%;
+    max-width:295px;
     margin-left:2px;
     margin-right:2px;
     margin-bottom:1%;
 }
 
-footer {
-    background-color:#D3D3D3;
+article {
+    padding-bottom:40px;
+    margin-right: auto;
+    margin-left: auto;
+    width:80%;
+    max-width:900px;
+}
+
+article p, h2 {
+    max-width:100%;
+    text-align:justify;
+}
+
+footer p {
+    font-size:10px;
     text-align:center;
-    padding-top:1px;
-    max-width:1000px;
-    width:93%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    /* Possible alternative style
-    position:fixed;
-    right:10%;
-    bottom:0px;
-    left:10%; */
 }
-
-footer section {
-    margin:0px;
-    padding:0px;
-}
-
-footer ul {
-    list-style-type:none; /*Removes bullets */
-    margin-top:5px;
-    margin-bottom:0px;
-}
-
-footer li{
-    margin-right: 2%;
-    display:inline; /*Makes list horizontal */
-}
-
-
-
 
 
 /* Class and ID styles*/
-#concept img {
-    max-height:150px; /* adjusts for narrower pinwheel picture */
+
+#header {
+    float:left;
+}    
+
+#header h1 {
+    clear:both;
+    width:40%;
+}
+
+#header li {
+    display:inline;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #social {
-    /* Social media buttons */
-    margin:2 2 2 2px;
-    padding:0px
+    float:right;
+    margin-right:10px;
+    margin-top:100px;
+}
+
+#social li {
+    display:inline;
 }
 
 #social img {
     width:25px;
     height:25px;
-    border:0px solid black; /*removes border */
 }
 
-@media screen and (max-width:600px) {
-    figure section {
-        /* background-color:#000000;
-        opacity:0.1;*/
-        position: absolute; /* Places text within img */
-        top: 1%;
-        left: 2%;
-        right:20%; /* Moves text further right to create more space */
-        bottom:3%;
-        overflow-y:auto; /* Creates scrolling */
+@media screen and (max-width:635px) {
+
+    #header {
+        float:left;
+        width:55%;
+    }    
+    
+    #header li {
+        display:inline;
+    }
+    
+    #social {
+        float:right;
+        margin-right:10px;
+        margin-top:100px;
     }
 }
+
+
+
+@media screen and (max-width:540px) {
     
+    article h2 {
+        text-align:left;
+    }
+    
+    #header {
+        width:90%;
+    }
+    
+    #social {
+        float:left;
+        margin-top:-25px;
+        margin-right:0%;
+        margin-bottom:-10px;
+    }
+}
 
 @media screen and (max-width:350px) {
-    figure section {
-        /* background-color:#000000;
-        opacity:0.1; */
-        position: absolute; /* Places text within img */
-        top: 7%;
-        left: 7%;
-        right:3%;
-        bottom:4%;
-        overflow-y:auto; /* Creates scrolling */
+    article {
+        width:100%;
     }
-}
+    
+    nav img {
+        width:100%;
+        max-width:225px;
+        max-height:225px;
+    }
+    
+    #header {
+        width:50%;
+    }
+    
+    #social {
+        float:right;
+        margin-top:1px;
+        margin-right:0%;
+    }
+    
+    #social li {
+        display:block;
+    }
