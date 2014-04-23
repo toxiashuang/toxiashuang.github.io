@@ -58,7 +58,7 @@ header ul {
 }
 
 figure {
-    padding-top:200px; /* Clears the header */
+    padding-top:180px; /* Clears the header */
     text-align:center;
     margin-left:0%;
     margin-right:0%;
@@ -136,6 +136,10 @@ footer p {
 }
 
 @media screen and (max-width:635px) {
+    
+    figure {
+        padding-top:190px;
+    }
 
     #header {
         float:left;
@@ -176,6 +180,10 @@ footer p {
 @media screen and (max-width:350px) {
     article {
         width:100%;
+    }
+    
+    figure {
+        padding-top:230px;
     }
     
     nav img {
