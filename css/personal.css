@@ -1,12 +1,6 @@
 
 
 /* General element styles */
-
-body{
-    margin:0px;   
-    font-family: 'Roboto', sans-serif;
-}
-
 h1 {
     font-size:55px;
     font-family: 'Julius Sans One', sans-serif;
@@ -17,7 +11,7 @@ h2 {
 }
 
 p {
-    font-family: 'Pontano Sans', sans-serif;
+  font-family: 'Crimson Text', 'serif';
 }
 
 a:link {

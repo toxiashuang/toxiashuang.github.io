@@ -12,7 +12,11 @@ h2 {
 }
 
 p {
-    font-family: 'Pontano Sans', sans-serif;
+  font-family: 'Crimson Text', 'serif';
+}
+
+li {
+    font-family: 'Crimson Text', 'serif';
 }
 
 a:link {
@@ -106,7 +110,7 @@ footer p {
 #social {
     float:right;
     margin-right:10px;
-    margin-top:100px;
+    margin-top:110px;
 }
 
 #social li {
@@ -132,7 +136,6 @@ footer p {
     #social {
         float:right;
         margin-right:10px;
-        margin-top:100px;
     }
 }
 
