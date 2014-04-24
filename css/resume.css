@@ -120,6 +120,10 @@ footer p {
     height:25px;
 }
 
+a.links:link {
+    color:#660099;
+}
+
 @media screen and (max-width:635px) {
 
     #header {
